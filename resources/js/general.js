@@ -1,37 +1,22 @@
 import Glide from '@glidejs/glide'
 
-const mobileScreen = window.matchMedia("screen and (min-width: 300px) and (max-width: 660px)")
-
-if (mobileScreen.matches) {
-
-  const glideThree = new Glide('.glide-3', {
-    perView: 1,
+const glideThreeInput = document.querySelector('.glide-3');
+const glideThree = new Glide('.glide-3', {
+  autoplay: 5000,
+  hoverpause: true,
+  perView: 1,
+  animationDuration: 500,
+  rewindDuration: 1000,
+})
+glideThreeInput.addEventListener('glideThreeInput', function (event) {
+  glideThree.update({
+    autoplay: (event.target.value != 0) ? event.target.value : false,
+    animationDuration: event.target.value,
+    rewindDuration: event.target.value
   })
+})
 
-  glideThree.mount()
-
-} else {
-
-  // Glide Science&Design Projects
-  const glideThreeInput = document.querySelector('.glide-3');
-  const glideThree = new Glide('.glide-3', {
-    autoplay: 5000,
-    hoverpause: true,
-    perView: 1,
-    animationDuration: 500,
-    rewindDuration: 1000,
-  })
-  glideThreeInput.addEventListener('glideThreeInput', function (event) {
-    glideThree.update({
-      autoplay: (event.target.value != 0) ? event.target.value : false,
-      animationDuration: event.target.value,
-      rewindDuration: event.target.value
-    })
-  })
-
-  glideThree.mount()
-
-}
+glideThree.mount()
 
 
 // ScrollUp Button
