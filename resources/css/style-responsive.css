@@ -1,0 +1,1136 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&family=Quicksand:wght@300;400;500&family=Gugi&display=swap");
+@media screen and (min-width: 300px) and (max-width: 660px) {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    overflow-x: hidden;
+    overflow: hidden;
+  }
+  main #scene-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    height: 50vh;
+    opacity: 0.8;
+  }
+  main .hero {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "right1 right1" "left1 left1";
+    gap: 0.5em;
+  }
+  main .hero .hero__div-left {
+    grid-area: left1;
+    height: 80vh;
+  }
+  main .hero .hero__div-left .nav {
+    margin: 2rem 0 0 10%;
+    transform: translateX(-10%);
+  }
+  main .hero .hero__div-left .nav ul {
+    font-size: 1.5em;
+  }
+  main .hero .hero__div-left .nav ul li {
+    padding: 2rem 3rem;
+  }
+  main .hero .hero__div-right {
+    position: relative;
+    grid-area: right1;
+    height: 20vh;
+  }
+  main .hero .hero__div-right .hero__div-logo {
+    padding-top: 3rem;
+    width: 15rem;
+  }
+
+  .science {
+    margin-top: 0;
+    width: 100%;
+    height: 180vh;
+    overflow: hidden;
+    position: relative;
+    background-image: radial-gradient(circle at 115%, #cae1eb 0, #2a5b6d 10%, #293950 25%);
+  }
+  .science p {
+    top: 27rem;
+    opacity: 0.03;
+    position: absolute;
+    font-family: "Gugi", cursive;
+    color: #e7e7e7;
+    font-size: 10em;
+  }
+  .science .science__content {
+    display: block;
+  }
+  .science .science__content .science__content-left {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+  }
+  .science .science__content .science__content-left p {
+    display: inline-block;
+    position: absolute;
+    z-index: 4;
+    margin: 1rem 2rem 1rem 1rem;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    line-height: 1.7em;
+    text-align: justify;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  .science .science__content .science__content-left p span {
+    font-family: "Gugi", cursive;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    color: #d8c174;
+  }
+  .science .science__content .science__content-right {
+    margin: 1rem 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .science .science__content .science__content-right .p-1, .science .science__content .science__content-right .p-2 {
+    position: absolute;
+    z-index: 5;
+    top: 7rem;
+    left: 2rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Gugi", cursive;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+  }
+  .science .science__content .science__content-right .p-2 {
+    top: 27rem;
+    left: 2rem;
+  }
+  .science .science__content .science__content-right .glide-1 {
+    position: absolute;
+    z-index: 4;
+    top: 8rem;
+    left: 0.8rem;
+    width: 90%;
+    height: 16rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__track {
+    background-color: rgba(255, 218, 97, 0.2);
+    border-radius: 10px;
+    height: 13rem;
+    margin: 0 auto;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__track .glide__slides {
+    margin: 0;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__track .glide__slides .glide__slide {
+    padding: 1.5rem;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__arrows .glide__arrow {
+    top: 13rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__arrows .glide__arrow svg {
+    fill: #293950;
+    stroke: #d8c174;
+    width: 3rem;
+    transition: all 0.5s;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__arrows .glide__arrow svg:hover {
+    fill: #32585f;
+  }
+  .science .science__content .science__content-right .glide-2 {
+    position: absolute;
+    z-index: 4;
+    top: 28rem;
+    left: 0.8rem;
+    width: 90%;
+    height: 16rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__track {
+    background-color: rgba(255, 218, 97, 0.2);
+    border-radius: 10px;
+    height: 13rem;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__track .glide__slides {
+    margin: 0;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__track .glide__slides .glide__slide {
+    padding: 1.5rem;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__arrows .glide__arrow {
+    top: 13rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__arrows .glide__arrow svg {
+    fill: #293950;
+    stroke: #d8c174;
+    width: 3rem;
+    transition: all 0.5s;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__arrows .glide__arrow svg:hover {
+    fill: #32585f;
+  }
+  .science .award_modal {
+    position: fixed;
+    height: 100vh;
+    inset: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .science .award_modal .award_modal-grid {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    margin: 3rem;
+  }
+  .science .award_modal .award_modal-grid .award_modal-header {
+    font-size: 2rem;
+    color: #e7e7e7;
+    font-weight: 700;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  .science .award_modal .award_modal-grid span {
+    float: right;
+  }
+  .science .award_modal .award_modal-grid img {
+    width: 100%;
+  }
+  .science .brmass_modal {
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .science .jic_modal {
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .science .open_modal {
+    visibility: visible;
+    pointer-events: all;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .design {
+    margin-top: 0em;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+    position: relative;
+    background-image: radial-gradient(circle at -10%, #39aad3 0, #2a5b6d 10%, #293950 25%);
+  }
+  .design p {
+    top: 0rem;
+    left: -2rem;
+    opacity: 0.035;
+    position: absolute;
+    font-family: "Gugi", cursive;
+    color: #d8c174;
+    font-size: 25em;
+  }
+  .design .design__content {
+    display: block;
+  }
+  .design .design__content .design__content-left {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+  }
+  .design .design__content .design__content-left p {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 1rem 2rem 1rem 1rem;
+    z-index: 4;
+    top: 0rem;
+    left: 0;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+    line-height: 2.2em;
+    text-align: justify;
+  }
+  .design .design__content .design__content-left p span {
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .design .design__content .design__content-right {
+    position: relative;
+    width: 100vw;
+    height: 120vh;
+  }
+  .design .design__content .design__content-right p {
+    display: flex ruby;
+    position: absolute;
+    z-index: 4;
+    top: 0rem;
+    left: 1rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.46em;
+    line-height: 2.2em;
+    text-align: justify;
+  }
+  .design .design__content .design__content-right .glide-3 {
+    position: absolute;
+    z-index: 4;
+    top: 0rem;
+    left: 1rem;
+    width: 100%;
+    height: 25rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track {
+    position: relative;
+    background-color: rgba(135, 168, 0, 0.2);
+    height: 26rem;
+    width: 90%;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides {
+    margin: 0;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide {
+    padding: 2rem 5rem 2rem 2rem;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide svg {
+    width: 50%;
+    margin: 5% 50%;
+    transform: translate(-50%, 5%);
+    filter: drop-shadow(1px 1px 50px rgba(253, 253, 253, 0.4));
+  }
+  .design .design__content .design__content-right .glide-3::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    display: inline-block;
+    background-color: #d8c174;
+    width: 0.3rem;
+    height: 28rem;
+    vertical-align: middle;
+    top: -1rem;
+    left: 0rem;
+    border-radius: 10px;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow {
+    top: 26rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow svg {
+    fill: #293950;
+    stroke: #d8c174;
+    width: 3rem;
+    transition: all 0.5s;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow svg:hover {
+    fill: #32585f;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow--left {
+    left: 10%;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow--right {
+    left: 65%;
+  }
+
+  .about {
+    margin-top: 5rem;
+    height: 100vh;
+  }
+  .about .about__content {
+    grid-auto-flow: row;
+    grid-template-areas: "box1 box1" "box2 box2" "box3 box3" "box4 box4" !important;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .contact {
+    margin-top: 10rem;
+    width: 100%;
+    height: 120vh;
+  }
+  .contact .contact__content {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-areas: "box1" "box2" "box3" !important;
+    margin: 0;
+  }
+  .contact .contact__content .contact__content-grid {
+    font-size: 2em;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-socialmedia {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-socialmedia svg {
+    width: 3rem;
+    margin: 0 1rem;
+  }
+  .contact .contact__content .contact__content-grid p {
+    all: initial;
+    font-size: 0.6em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    font-style: oblique;
+    color: #d8c174;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-form {
+    width: 90%;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-form label {
+    margin: 0.5rem 0.5rem;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-form label span {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-form label input, .contact .contact__content .contact__content-grid .contact__content-grid-form label textarea {
+    all: unset;
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(216, 193, 116, 0.5);
+    font-family: "Newsreader", serif;
+    font-size: 0.6em;
+    color: #e7e7e7;
+    padding: 0.5rem;
+    border-radius: 7px;
+    margin: 0.5rem 0.5rem;
+    cursor: cell;
+    caret-color: white;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-form label textarea {
+    height: 10rem;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-indent: 0;
+  }
+  .contact .contact__content .contact__content-grid button {
+    width: 6rem;
+    height: 2.5rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.6em;
+    background-color: #d8c174;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 0.5rem 0.5rem;
+  }
+  .contact .contact__content .contact__content-grid button:hover {
+    background-color: #3e8bca;
+    width: 6.5rem;
+  }
+  .contact .contact__content:nth-child(1) {
+    grid-area: box1;
+  }
+  .contact .contact__content:nth-child(2) {
+    grid-area: box2;
+  }
+  .contact .contact__content:nth-child(3) {
+    grid-area: box3;
+  }
+}
+@media screen and (min-width: 661px) and (max-width: 1024px) {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    height: 100vh;
+  }
+  main #scene-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 90vh;
+    opacity: 0.8;
+  }
+  main .hero {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "left1 right1" "left1 right1";
+    gap: 0.5em;
+  }
+  main .hero .hero__div-left {
+    position: relative;
+    grid-area: left1;
+    height: 100vh;
+  }
+  main .hero .hero__div-left .nav ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    list-style-type: none;
+    display: inline;
+    font-size: 2.5em;
+    letter-spacing: 0.4em;
+  }
+  main .hero .hero__div-left .nav ul li {
+    padding: 6.7rem 0 0 4rem;
+    display: flex;
+  }
+  main .hero .hero__div-left .nav ul li a {
+    position: relative;
+    font-family: "Gugi", cursive;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  main .hero .hero__div-left .nav ul li a::before {
+    content: "";
+    display: inline-block;
+    background-color: #d8c174;
+    width: 0.08em;
+    height: 1em;
+    vertical-align: middle;
+    margin-bottom: 0.2em;
+    margin-right: 0.5em;
+    border-radius: 2px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  main .hero .hero__div-left .nav ul li a::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-color: #0f0f0f00;
+    width: 8em;
+    height: 0.08em;
+    vertical-align: middle;
+    margin-bottom: 0.2em;
+    margin-left: 0.08em;
+    top: 1.5em;
+    left: -10em;
+    border-radius: 2px;
+    transition: all 0.1s cubic-bezier(1, 0.5, 0.5, 1);
+  }
+  main .hero .hero__div-left .nav ul li a:hover {
+    color: #d8c174;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  main .hero .hero__div-left .nav ul li a:hover::before {
+    content: "";
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    width: 0.08em;
+    height: 1em;
+    vertical-align: middle;
+    margin-bottom: 0.2em;
+    margin-right: 0.5em;
+    border-radius: 2px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  main .hero .hero__div-left .nav ul li a:hover::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-color: #d8c174;
+    width: 8em;
+    height: 0.08em;
+    vertical-align: middle;
+    margin-bottom: 0.2em;
+    margin-left: 0.08em;
+    top: 1.5em;
+    left: 0.5em;
+    border-radius: 2px;
+    transition: all 0.1s cubic-bezier(0.75, 0.25, 0.5, 1);
+  }
+  main .hero .hero__div-right {
+    position: relative;
+    grid-area: right1;
+    height: 100vh;
+  }
+  main .hero .hero__div-right .hero__div-logo {
+    position: absolute;
+    width: 25rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  main .hero .hero__div-right .hero__div-logo svg {
+    filter: drop-shadow(2px 2px 5px #303030);
+  }
+
+  .science {
+    margin-top: 5em;
+    width: 100%;
+    height: 200vh;
+    overflow: hidden;
+    position: relative;
+    background-image: radial-gradient(circle at 115%, #cae1eb 0, #2a5b6d 10%, #293950 25%);
+  }
+  .science p {
+    top: 32rem;
+    left: 2rem;
+    opacity: 0.03;
+    position: absolute;
+    font-family: "Gugi", cursive;
+    color: #e7e7e7;
+    font-size: 10em;
+  }
+  .science .science__main {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .science .science__main canvas {
+    width: 50%;
+  }
+  .science .science__content {
+    flex-basis: 100%;
+    display: block;
+  }
+  .science .science__content .science__content-left {
+    position: relative;
+    width: 90%;
+    height: 50vh;
+  }
+  .science .science__content .science__content-left p {
+    display: block;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    position: absolute;
+    z-index: 4;
+    top: 5.5rem;
+    left: 2rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    line-height: 2.2em;
+    text-align: justify;
+  }
+  .science .science__content .science__content-left p span {
+    font-family: "Gugi", cursive;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    color: #d8c174;
+  }
+  .science .science__content .science__content-right {
+    margin: 0 auto;
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+  }
+  .science .science__content .science__content-right .p-1, .science .science__content .science__content-right .p-2 {
+    position: absolute;
+    z-index: 5;
+    top: 7rem;
+    left: 2rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Gugi", cursive;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+  }
+  .science .science__content .science__content-right .p-2 {
+    top: 27rem;
+    left: 2rem;
+  }
+  .science .science__content .science__content-right .glide-1 {
+    position: absolute;
+    z-index: 4;
+    top: 8rem;
+    left: 1.1rem;
+    width: 100%;
+    height: 16rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__track {
+    background-color: rgba(255, 218, 97, 0.2);
+    border-radius: 10px;
+    height: 13rem;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__track .glide__slides {
+    margin: 0;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__track .glide__slides .glide__slide {
+    padding: 1.5rem;
+    width: 70vw !important;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__arrows .glide__arrow {
+    top: 13rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__arrows .glide__arrow svg {
+    fill: #293950;
+    stroke: #d8c174;
+    width: 3rem;
+    transition: all 0.5s;
+  }
+  .science .science__content .science__content-right .glide-1 .glide__arrows .glide__arrow svg:hover {
+    fill: #32585f;
+  }
+  .science .science__content .science__content-right .glide-2 {
+    position: absolute;
+    z-index: 4;
+    top: 28rem;
+    left: 1.1rem;
+    width: 100%;
+    height: 16rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__track {
+    background-color: rgba(255, 218, 97, 0.2);
+    border-radius: 10px;
+    height: 13rem;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__track .glide__slides {
+    margin: 0;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__track .glide__slides .glide__slide {
+    padding: 1.5rem;
+    width: 70vw !important;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__arrows .glide__arrow {
+    top: 13rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__arrows .glide__arrow svg {
+    fill: #293950;
+    stroke: #d8c174;
+    width: 3rem;
+    transition: all 0.5s;
+  }
+  .science .science__content .science__content-right .glide-2 .glide__arrows .glide__arrow svg:hover {
+    fill: #32585f;
+  }
+
+  .design {
+    margin-top: 0em;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: radial-gradient(circle at -10%, #39aad3 0, #2a5b6d 10%, #293950 25%);
+  }
+  .design p {
+    top: 0rem;
+    left: -2rem;
+    opacity: 0.035;
+    position: absolute;
+    font-family: "Gugi", cursive;
+    color: #d8c174;
+    font-size: 25em;
+  }
+  .design .design__content {
+    display: block;
+  }
+  .design .design__content .design__content-left {
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+  }
+  .design .design__content .design__content-left p {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 1rem 8rem;
+    z-index: 4;
+    top: 0rem;
+    left: 0;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+    line-height: 2.2em;
+    text-align: justify;
+  }
+  .design .design__content .design__content-left p span {
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .design .design__content .design__content-right {
+    margin: 0 auto;
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+  }
+  .design .design__content .design__content-right p {
+    display: flex ruby;
+    position: absolute;
+    z-index: 4;
+    top: 0rem;
+    left: 1rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.46em;
+    line-height: 2.2em;
+    text-align: justify;
+  }
+  .design .design__content .design__content-right .glide-3 {
+    position: absolute;
+    z-index: 4;
+    top: 0rem;
+    left: 1rem;
+    width: 100%;
+    height: 25rem;
+    opacity: 1;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track {
+    position: relative;
+    background-color: rgba(135, 168, 0, 0.2);
+    height: 26rem;
+    width: 70vw;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides {
+    margin: 0;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide {
+    padding: 2rem 5rem 2rem 2rem;
+    width: 70vw !important;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide svg {
+    width: 30%;
+    margin: 5% 50%;
+    transform: translate(-50%, 5%);
+    filter: drop-shadow(1px 1px 50px rgba(253, 253, 253, 0.4));
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide svg.logo_bioOmiteca_sm {
+    width: 50% !important;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide svg.logo_operaGeo_sm {
+    width: 50% !important;
+  }
+  .design .design__content .design__content-right .glide-3::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    display: inline-block;
+    background-color: #d8c174;
+    width: 0.3rem;
+    height: 28rem;
+    vertical-align: middle;
+    top: -1rem;
+    left: 0rem;
+    border-radius: 10px;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow {
+    top: 13rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow svg {
+    fill: #293950;
+    stroke: #d8c174;
+    width: 3rem;
+    transition: all 0.5s;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow svg:hover {
+    fill: #32585f;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow--left {
+    left: -5%;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow--right {
+    left: 95%;
+  }
+
+  .about {
+    height: 100vh;
+  }
+  .about .about__content {
+    grid-auto-flow: row;
+    grid-template-areas: "box1 box1" "box2 box2" "box3 box3" "box4 box4" !important;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .contact {
+    width: 95vw;
+    height: 120vh;
+  }
+  .contact .contact__content {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-areas: "box1" "box2" "box3" !important;
+    margin: 1rem;
+  }
+  .contact .contact__content form {
+    all: initial;
+    margin: 0 auto;
+  }
+  .contact .contact__content .contact__content-grid {
+    font-size: 2em;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    align-items: center;
+    margin: 0 auto !important;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-socialmedia {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-socialmedia svg {
+    width: 3rem;
+    margin: 0 2rem;
+  }
+  .contact .contact__content .contact__content-grid p {
+    all: initial;
+    font-size: 0.6em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    font-style: oblique;
+    color: #d8c174;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-form {
+    align-self: initial;
+    width: 20rem;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-form label span {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-form label input, .contact .contact__content .contact__content-grid .contact__content-grid-form label textarea {
+    all: unset;
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(216, 193, 116, 0.5);
+    font-family: "Newsreader", serif;
+    font-size: 0.6em;
+    color: #e7e7e7;
+    padding: 0.5rem;
+    border-radius: 7px;
+    margin: 0.5rem 0;
+    cursor: cell;
+    caret-color: white;
+  }
+  .contact .contact__content .contact__content-grid .contact__content-grid-form label textarea {
+    height: 10rem;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-indent: 0;
+  }
+  .contact .contact__content .contact__content-grid button {
+    width: 6rem;
+    height: 2.5rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.6em;
+    background-color: #d8c174;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .contact .contact__content .contact__content-grid button:hover {
+    background-color: #3e8bca;
+    width: 6.5rem;
+  }
+  .contact .contact__content :nth-child(1) {
+    grid-area: box1;
+  }
+  .contact .contact__content :nth-child(2) {
+    grid-area: box2;
+  }
+  .contact .contact__content :nth-child(3) {
+    grid-area: box3;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1999px) {
+  html {
+    background: #293950;
+  }
+
+  body {
+    margin: 0 0;
+    padding: 0;
+    color: #2e2e2e;
+    background: #293950;
+  }
+
+  .scroll-down .scroll-up-bar {
+    width: 5%;
+  }
+
+  main .hero .hero__div-left .nav {
+    margin-left: 2rem;
+  }
+  main .hero .hero__div-left .nav ul {
+    font-size: 3em;
+    letter-spacing: 0.4em;
+  }
+  main .hero .hero__div-left .nav ul li:nth-child(1) {
+    margin-top: 8rem;
+  }
+  main .hero .hero__div-right .hero__div-logo {
+    width: 40rem;
+  }
+  main .hero .hero__div-right .hero__div-logo svg {
+    margin-right: 10rem;
+  }
+
+  .science .science__content .science__content-right .glide-1 {
+    width: 70%;
+  }
+  .science .science__content .science__content-right .glide-2 {
+    width: 70%;
+  }
+
+  .design .design__content .design__content-left p {
+    top: 46%;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track {
+    width: 100%;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide svg.logo_operaGeo_sm {
+    width: 70% !important;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide svg.logo_bioOmiteca_sm {
+    width: 70% !important;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow--right {
+    left: 95%;
+  }
+
+  .contact .contact__content .text-email {
+    margin: 0 auto;
+  }
+  .contact .contact__content form {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 2000px) {
+  html {
+    background: #293950;
+  }
+
+  body {
+    margin: 0 20%;
+    padding: 0;
+    color: #2e2e2e;
+    background: #293950;
+  }
+
+  .scroll-down .scroll-up-bar {
+    width: 5%;
+  }
+
+  main .hero .hero__div-left .nav {
+    margin-left: 2rem;
+  }
+  main .hero .hero__div-left .nav ul {
+    font-size: 3em;
+    letter-spacing: 0.4em;
+  }
+  main .hero .hero__div-left .nav ul li:nth-child(1) {
+    margin-top: 8rem;
+  }
+  main .hero .hero__div-right .hero__div-logo {
+    width: 40rem;
+  }
+  main .hero .hero__div-right .hero__div-logo svg {
+    margin-right: 10rem;
+  }
+
+  .science .science__content .science__content-right .glide-1 {
+    width: 70%;
+  }
+  .science .science__content .science__content-right .glide-2 {
+    width: 70%;
+  }
+
+  .design .design__content .design__content-left p {
+    top: 46%;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track {
+    width: 100%;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide svg.logo_operaGeo_sm {
+    width: 70% !important;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__track .glide__slides .glide__slide svg.logo_bioOmiteca_sm {
+    width: 70% !important;
+  }
+  .design .design__content .design__content-right .glide-3 .glide__arrows .glide__arrow--right {
+    left: 95%;
+  }
+
+  .contact .contact__content .text-email {
+    margin: 0 auto;
+  }
+  .contact .contact__content form {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style-responsive.css.map */
